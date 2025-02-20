@@ -39,7 +39,7 @@ inboundCall:
         initialValue:
           noValue: true
     - integerVariable:
-        name: Flow.priority
+        name: Flow.priority1
         initialValue:
           noValue: true
     - stringVariable:
