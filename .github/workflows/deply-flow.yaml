@@ -1,7 +1,7 @@
 name: Genesys Cloud Flow Deploy
 on:
   push:
-    branches: [branch_dev]
+    branches: [main]
   workflow_dispatch:
 jobs:
   ###
