@@ -43,7 +43,7 @@ inboundCall:
         initialValue:
           noValue: true
     - stringVariable:
-        name: Flow.product2
+        name: Flow.product3
         initialValue:
           noValue: true
     - stringVariable:
