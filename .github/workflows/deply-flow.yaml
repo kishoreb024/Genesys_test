@@ -1,18 +1,33 @@
-name: Genesys Cloud Deploy Flow
+name: Genesys Cloud Email Non-Prod Deploy
 on:
   push:
-  branches: [main]
+    branches: [main]
   workflow_dispatch:
-  jobs:
-deploy-flow:
- runs-on: ubuntu-latest
- env:
-   GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
-   GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
-   GENESYSCLOUD_REGION: ${{ SECRETS.GENESYSCLOUD_REGION }}
+jobs:
+  ###
+  #  job: deploy-email-flow-dev
+  #
+  #  The deploy-email-flow-dev job starts by first setting all of the environment variables specific to the development environment. Secret values
+  #  are pulled directly from the GitHub Actions secrets vaults. Otherwise, all environment variables are set directly in the script.
+  #  Once all of the environment variables are set the following steps are taken:
+  #
+  #  Step 1 (actions/checkout@v2): Uses a remote action to checkout all of the source code.
+  #  Step 2 (./.github/actions/genesys-cloud-dev-tools): Uses a local action to install the Genesys Cloud Python SDK and the Archy tools
+  #  Step 3 (hashicorp/setup-terraform@v1): Uses a remote action to install Terraform and configure the Terraform token
+  #  Step 4 (./.github/actions/genesys-cloud-apply-terraform): Uses a local action to run Terraform
+  #  Step 5 (./.github/actions/genesys-cloud-publish-archy-flow): Uses a local action to run Archy
+  #  Step 6 (./.github/actions/genesys-cloud-create-email-domain-route): Uses a local action to run our python script to create our email domain route
+  ###
+  deploy-email-flow-dev:
+    runs-on: ubuntu-latest
+    env:
+      GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
+      GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
+      GENESYSCLOUD_API_REGION: "https://api.usw2.pure.cloud"
     steps:
       - uses: actions/checkout@v2
       - uses: hashicorp/setup-terraform@v1
         with:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
       - uses: ./.github/actions/genesys-cloud-apply-terraform
+      
