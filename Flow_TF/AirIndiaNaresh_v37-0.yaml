@@ -47,7 +47,7 @@ inboundCall:
         initialValue:
           noValue: true
     - stringVariable:
-        name: Flow.queue_id
+        name: Flow.queue_id1
         initialValue:
           noValue: true
   settingsActionDefaults:
