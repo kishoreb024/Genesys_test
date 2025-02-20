@@ -1,0 +1,11 @@
+name: Apply Terraform
+description: "Call Terraform"
+runs:
+   using: "composite"
+   steps:
+	run:
+	 cd $GITHUB_WORKSPACE/Flow_TF/
+	 terraform init
+     terraform apply --auto-approve
+	 cd $GITHUB_WORKSPACE
+	 shell: bash
