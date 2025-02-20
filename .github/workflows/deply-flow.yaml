@@ -1,4 +1,4 @@
-name: Genesys Cloud Email Non-Prod Deploy
+name: Genesys Cloud Flow Deploy
 on:
   push:
     branches: [main]
@@ -18,12 +18,11 @@ jobs:
   #  Step 5 (./.github/actions/genesys-cloud-publish-archy-flow): Uses a local action to run Archy
   #  Step 6 (./.github/actions/genesys-cloud-create-email-domain-route): Uses a local action to run our python script to create our email domain route
   ###
-  deploy-email-flow-dev:
+  deploy-flow:
     runs-on: ubuntu-latest
     env:
       GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
       GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
-      GENESYSCLOUD_API_REGION: "https://api.usw2.pure.cloud"
     steps:
       - uses: actions/checkout@v2
       - uses: hashicorp/setup-terraform@v1
