@@ -1,4 +1,4 @@
-resource "genesyscloud_flow" "New_Flow" {
+resource "genesyscloud_flow" "Kishore_TF_Sample" {
   filepath          = "AirIndiaNaresh_v37-0.yaml"
   file_content_hash = filesha256("AirIndiaNaresh_v37-0.yaml")
   // Example flow configuration using substitutions:
