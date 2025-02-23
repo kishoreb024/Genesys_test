@@ -5,6 +5,8 @@ runs:
   steps:
     - run: |
         cd $GITHUB_WORKSPACE/Dev/
+        EXPORT TF_VAR_GENESYSCLOUD_OAUTHCLIENT_ID = "b9f8ef5f-397c-4624-8e3d-a7aaef53f68e"
+        EXPORT TF_VAR_GENESYSCLOUD_OAUTHCLIENT_SECRET = "svg1eWNtXVNj8BN-4BDQqBhnD3Jf5oY_q2DixDa0d-E"
         terraform init 
         terraform apply --auto-approve
         cd $GITHUB_WORKSPACE
