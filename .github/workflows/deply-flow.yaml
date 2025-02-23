@@ -37,8 +37,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: deploy-flow
     env:
-      GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID_DEV }}
-      GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET_DEV }}
+      GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
+      GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
       GENESYSCLOUD_REGION: "ap-south-1"
       GENESYSCLOUD_API_REGION: "https://api.aps1.pure.cloud"
     steps:
