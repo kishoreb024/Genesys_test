@@ -16,10 +16,8 @@ terraform {
 }
 
 variable "GENESYSCLOUD_OAUTHCLIENT_ID" {
-  default = ""
 }
 variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
-  default = ""
 }
 
 provider "genesyscloud" {
