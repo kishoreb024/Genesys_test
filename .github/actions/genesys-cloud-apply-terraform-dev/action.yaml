@@ -1,5 +1,11 @@
 name: "Invoke Terraform with Auto Apply"
 description: "Invoke Terraform with Auto Apply"
+env:
+      GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
+      GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
+      TF_VAR_GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
+      TF_VAR_GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
+      TF_VAR_GENESYSCLOUD_REGION: ${{ secrets.GENESYSCLOUD_REGION}}
 runs:
   using: "composite"
   steps:
