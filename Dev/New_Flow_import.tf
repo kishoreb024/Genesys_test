@@ -1,6 +1,6 @@
 resource "genesyscloud_flow" "New_Flow" {
-  filepath          = "Genesys_Flow_Prod.yaml"
-  file_content_hash = filesha256("Genesys_Flow_Prod.yaml")
+  filepath          = "Genesys_Flow_Dev.yaml"
+  file_content_hash = filesha256("Genesys_Flow_Dev.yaml")
   // Example flow configuration using substitutions:
   /*
   inboundCall:
