@@ -8,7 +8,8 @@ CLIENT_ID = os.environ["GENESYSCLOUD_OAUTHCLIENT_ID"]
 CLIENT_SECRET = os.environ["GENESYSCLOUD_OAUTHCLIENT_SECRET"]
 CLIENT_REGION = os.environ["GENESYSCLOUD_REGION"]
 CLIENT_API_REGION = os.environ["GENESYSCLOUD_API_REGION"]
-
+print (CLIENT_ID)
+print (CLIENT_SECRET)
 PureCloudPlatformClientV2.configuration.host = 	CLIENT_API_REGION
 apiClient = PureCloudPlatformClientV2.api_client.ApiClient().get_client_credentials_token(CLIENT_ID, CLIENT_SECRET)
 routingApi = PureCloudPlatformClientV2.RoutingApi(apiClient)

@@ -45,5 +45,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/genesys-cloud-dev-tools
       - name: Platform tests
-        run: python scripts/platform_tests.py
+        run: python Scripts/platform_tests.py
       
