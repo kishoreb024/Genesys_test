@@ -15,10 +15,10 @@ terraform {
   }
 }
 
-variable "GENESYSCLOUD_OAUTHCLIENT_ID" {
+variable "GENESYSCLOUD_OAUTHCLIENT_ID1" {
 
 }
-variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
+variable "GENESYSCLOUD_OAUTHCLIENT_SECRET1" {
 }
 
 provider "genesyscloud" {
