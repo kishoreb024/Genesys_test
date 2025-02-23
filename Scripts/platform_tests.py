@@ -12,8 +12,7 @@ print (CLIENT_ID)
 print (CLIENT_SECRET)
 PureCloudPlatformClientV2.configuration.host = 	CLIENT_API_REGION
 apiClient = PureCloudPlatformClientV2.api_client.ApiClient().get_client_credentials_token(CLIENT_ID, CLIENT_SECRET)
-routingApi = PureCloudPlatformClientV2.RoutingApi(apiClient)
-integrationsApi = PureCloudPlatformClientV2.IntegrationsApi(apiClient)
+ArchitectApi = PureCloudPlatformClientV2.ArchitectApi(apiClient)
 
 def findFlow(FlowName):
   results = ArchitectApi.get_flows(name=FlowName)
