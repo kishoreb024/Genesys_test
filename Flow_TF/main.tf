@@ -31,7 +31,7 @@ variable "GENESYSCLOUD_REGION" {
   type        = string
   description =  "GENESYSCLOUD_REGION"
 }
-output "gen variables" {
+output "genvariables" {
   value=var.GENESYSCLOUD_REGION
 }
 
