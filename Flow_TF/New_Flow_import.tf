@@ -25,6 +25,6 @@ resource "genesyscloud_flow" "New_Flow" {
   substitutions = {
     flow_name            = "An example flow"
     default_language     = "en-us"
-    greeting             = "Hello World"
+    greeting             = "Hello World 1"
   }
 }
