@@ -36,7 +36,7 @@ jobs:
       - uses: ./.github/actions/genesys-cloud-apply-terraform-Prod
   execute-platform-tests:
     runs-on: ubuntu-latest
-    needs: deploy-email-flow-dev
+    needs: deploy-flow
     env:
       GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID_DEV }}
       GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET_DEV }}
