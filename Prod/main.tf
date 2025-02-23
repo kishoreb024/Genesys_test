@@ -16,8 +16,8 @@ terraform {
 }
 
 provider "genesyscloud" {
-  oauthclient_id = GENESYSCLOUD_OAUTHCLIENT_ID
-  oauthclient_secret = GENESYSCLOUD_OAUTHCLIENT_SECRET
-  aws_region = GENESYSCLOUD_REGION
+  oauthclient_id = os.environ["GENESYSCLOUD_OAUTHCLIENT_ID"]
+  oauthclient_secret = os.environ["GENESYSCLOUD_OAUTHCLIENT_SECRET"]
+  aws_region = os.environ["GENESYSCLOUD_REGION"]
 }
 
