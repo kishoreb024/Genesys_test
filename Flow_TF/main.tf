@@ -27,7 +27,13 @@ variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
   sensitive = true
 }
 
-
+variable "GENESYSCLOUD_REGION" {
+  type        = string
+  description =  "GENESYSCLOUD_REGION"
+}
+output "gen variables" {
+  value=var.GENESYSCLOUD_REGION
+}
 
 provider "genesyscloud" {
   oauthclient_id = var.GENESYSCLOUD_OAUTHCLIENT_ID

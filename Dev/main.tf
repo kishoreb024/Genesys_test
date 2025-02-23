@@ -26,11 +26,18 @@ variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
   description = "Genesys Secret"
   sensitive = true
 }
+variable "GENESYSCLOUD_REGION" {
+  type        = string
+  description =  "GENESYSCLOUD_REGION"
+}
 
-
-
+output "gen variables" {
+  value=var.GENESYSCLOUD_REGION
+}
 provider "genesyscloud" {
   oauthclient_id = var.GENESYSCLOUD_OAUTHCLIENT_ID
+  ech
   oauthclient_secret = var.GENESYSCLOUD_OAUTHCLIENT_SECRET
   aws_region = "ap-south-1"
+  test = var.GENESYSCLOUD_REGION
 }
