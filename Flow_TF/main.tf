@@ -15,27 +15,10 @@ terraform {
   }
 }
 
-variable "GENESYSCLOUD_OAUTHCLIENT_ID" {
-  type        = string
-  description = "Genesys Client ID"
-  sensitive = true
-}
-
-variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
-  type        = string
-  description = "Genesys Secret"
-  sensitive = true
-}
-
-variable "GENESYSCLOUD_REGION" {
-  type        = string
-  description =  "GENESYSCLOUD_REGION"
-}
 
 
 provider "genesyscloud" {
-  oauthclient_id = env.GENESYSCLOUD_OAUTHCLIENT_ID
-  oauthclient_secret = env.GENESYSCLOUD_OAUTHCLIENT_SECRET
+  oauthclient_id = os.environ["GENESYSCLOUD_OAUTHCLIENT_ID"]
+  oauthclient_secret = os.environ["GENESYSCLOUD_OAUTHCLIENT_SECRET"]
   aws_region = "ap-south-1"
-  test = env.GENESYSCLOUD_REGION
 }
