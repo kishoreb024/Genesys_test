@@ -32,7 +32,6 @@ variable "GENESYSCLOUD_REGION" {
 
 provider "genesyscloud" {
   oauthclient_id = TF_VAR_GENESYSCLOUD_OAUTHCLIENT_ID
-  ech
   oauthclient_secret = TF_VAR_GENESYSCLOUD_OAUTHCLIENT_SECRET
   aws_region = "ap-south-1"
   test = TF_VAR_GENESYSCLOUD_REGION
