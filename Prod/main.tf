@@ -17,11 +17,11 @@ terraform {
 
 variable "GENESYSCLOUD_OAUTHCLIENT_ID" {
   type = string
-  default = ""
+  default = "b9f8ef5f-397c-4624-8e3d-a7aaef53f68e"
 }
 variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
     type = string
-  default = ""
+  default = "svg1eWNtXVNj8BN-4BDQqBhnD3Jf5oY_q2DixDa0d-E"
 }
 
 provider "genesyscloud" {
