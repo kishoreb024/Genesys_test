@@ -31,7 +31,7 @@ inboundCall:
         initialValue:
           noValue: true
     - integerVariable:
-        name: Flow.NewNumber1
+        name: Flow.NewNumber2
         initialValue:
           noValue: true
     - integerVariable:

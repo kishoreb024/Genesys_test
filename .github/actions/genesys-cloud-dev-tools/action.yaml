@@ -1,0 +1,15 @@
+###
+#  This action installs the Genesys Cloud python SDK.
+#  It also adds Archy to the path
+#
+###
+name: "Setup Genesys Cloud Tools"
+description: "Installs Genesys Cloud CLI"
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        pip install PureCloudPlatformClientV2
+        mkdir output
+        pwd
+      shell: bash
