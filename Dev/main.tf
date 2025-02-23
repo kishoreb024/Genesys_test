@@ -31,13 +31,10 @@ variable "GENESYSCLOUD_REGION" {
   description =  "GENESYSCLOUD_REGION"
 }
 
-output "genvariables" {
-  value=var.GENESYSCLOUD_REGION
-}
 provider "genesyscloud" {
-  oauthclient_id = var.GENESYSCLOUD_OAUTHCLIENT_ID
+  oauthclient_id = TF_VAR_GENESYSCLOUD_OAUTHCLIENT_ID
   ech
-  oauthclient_secret = var.GENESYSCLOUD_OAUTHCLIENT_SECRET
+  oauthclient_secret = TF_VAR_GENESYSCLOUD_OAUTHCLIENT_SECRET
   aws_region = "ap-south-1"
-  test = var.GENESYSCLOUD_REGION
+  test = TF_VAR_GENESYSCLOUD_REGION
 }
