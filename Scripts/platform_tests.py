@@ -18,6 +18,7 @@ def findFlow(FlowName):
   results = ArchitectApi.get_flows(name=FlowName)
 
   if len(results.entities)==1:
+    print (results.entities[0])
     return results.entities[0]
   else: 
     return None    
