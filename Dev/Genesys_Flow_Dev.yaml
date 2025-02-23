@@ -19,7 +19,7 @@ inboundCall:
         initialValue:
           noValue: true
     - stringVariable:
-        name: Flow.IVR_Journey_Report
+        name: Flow.IVR_Journey_Report1
         initialValue:
           noValue: true
     - stringVariable:

@@ -20,12 +20,12 @@ jobs:
   ###
   deploy-flow:
     runs-on: ubuntu-latest
+    environment: Flow_Deploy
     env:
       GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
       GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
       TF_VAR_GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
       TF_VAR_GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
-      TF_VAR_GENESYSCLOUD_REGION: ${{ secrets.GENESYSCLOUD_REGION}}
     steps:
       - uses: actions/checkout@v2
       - uses: hashicorp/setup-terraform@v1
