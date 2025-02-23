@@ -15,15 +15,10 @@ terraform {
   }
 }
 
-variable "GENESYSCLOUD_OAUTHCLIENT_ID1" {
-  default = ""
-}
-variable "GENESYSCLOUD_OAUTHCLIENT_SECRET1" {
-  default = ""
-}
+
 
 provider "genesyscloud" {
-  oauthclient_id = var.GENESYSCLOUD_OAUTHCLIENT_ID1
-  oauthclient_secret = var.GENESYSCLOUD_OAUTHCLIENT_SECRET1
+  oauthclient_id = "b9f8ef5f-397c-4624-8e3d-a7aaef53f68e"
+  oauthclient_secret = "svg1eWNtXVNj8BN-4BDQqBhnD3Jf5oY_q2DixDa0d-E"
   aws_region = "ap-south-1"
 }
