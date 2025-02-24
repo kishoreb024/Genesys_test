@@ -19,7 +19,7 @@ variable "GENESYSCLOUD_OAUTHCLIENT_ID"{
 }
 
 output "GENESYSCLOUD_OAUTHCLIENT_ID" {
-  value = "${var.GENESYSCLOUD_OAUTHCLIENT_ID}"
+  value = ${var.GENESYSCLOUD_OAUTHCLIENT_ID}
 }
 
 provider "genesyscloud" {
