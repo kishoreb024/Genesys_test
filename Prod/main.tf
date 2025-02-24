@@ -4,7 +4,7 @@ terraform {
     organization = "Genesys_Mumbai_Test" 
 
     workspaces { 
-      name = "Genesys_Prod_TF" 
+      name = "Genesys_Prod_Workspace" 
     } 
   } 
   required_providers {
