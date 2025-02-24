@@ -20,7 +20,6 @@ jobs:
   ###
   deploy-flow:
     runs-on: ubuntu-latest
-    environment: Flow_Deploy
     env:
       GENESYSCLOUD_OAUTHCLIENT_ID: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_ID }}
       GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
