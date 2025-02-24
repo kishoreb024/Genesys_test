@@ -133,7 +133,7 @@ inboundCall:
           - dataTableLookup:
               name: Data Table Lookup
               lookupValue:
-                lit: Flow.ID
+                lit: Flow.ID2
               dataTable:
                 00_Sanjeev_DataTable:
                   foundOutputs:
