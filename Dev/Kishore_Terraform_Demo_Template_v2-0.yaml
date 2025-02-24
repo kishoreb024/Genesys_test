@@ -127,7 +127,7 @@ inboundCall:
               attributes:
                 - attribute:
                     name:
-                      lit: FLow.ID
+                      lit: FLow.ID2
                     value:
                       lit: "\"12345678\""
           - dataTableLookup:
