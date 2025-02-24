@@ -127,13 +127,13 @@ inboundCall:
               attributes:
                 - attribute:
                     name:
-                      lit: FLow.ID2
+                      lit: FLow.ID3
                     value:
                       lit: "\"12345678\""
           - dataTableLookup:
               name: Data Table Lookup
               lookupValue:
-                lit: Flow.ID2
+                lit: Flow.ID3
               dataTable:
                 00_Sanjeev_DataTable:
                   foundOutputs:
