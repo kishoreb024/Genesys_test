@@ -4,12 +4,10 @@ import os
 import time
 import PureCloudPlatformClientV2
 
-CLIENT_ID = GENESYSCLOUD_OAUTHCLIENT_ID
-CLIENT_SECRET = GENESYSCLOUD_OAUTHCLIENT_SECRET
+CLIENT_ID = "b9f8ef5f-397c-4624-8e3d-a7aaef53f68e"
+CLIENT_SECRET = "svg1eWNtXVNj8BN-4BDQqBhnD3Jf5oY_q2DixDa0d-E"
 CLIENT_REGION = os.environ["GENESYSCLOUD_REGION"]
 CLIENT_API_REGION = os.environ["GENESYSCLOUD_API_REGION"]
-print (CLIENT_ID)
-print (CLIENT_SECRET)
 PureCloudPlatformClientV2.configuration.host = 	CLIENT_API_REGION
 apiClient = PureCloudPlatformClientV2.api_client.ApiClient().get_client_credentials_token(CLIENT_ID, CLIENT_SECRET)
 ArchitectApi = PureCloudPlatformClientV2.ArchitectApi(apiClient)
@@ -24,12 +22,12 @@ def findFlow(FlowName):
     return None    
 
 def checkFlows():
-  Sample_TF_Dev = findFlow("Sample_TF_Dev") 
+  LBG_TF_Test_Dev = findFlow("LBG_TF_Test_Dev") 
   
-  assert not(Sample_TF_Dev is None)
+  assert not(LBG_TF_Test_Dev is None)
 
   
-  assert (Sample_TF_Dev.name=="Sample_TF_Dev")==True,   "Retrieved Sample_TF_Dev Flow name does not match" 
+  assert (LBG_TF_Test_Dev.name=="LBG_TF_Test_Dev")==True,   "Retrieved LBG_TF_Test_Dev Flow name does not match" 
 
 
 #adding check

@@ -21,7 +21,7 @@ variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
 }
 
 provider "genesyscloud" {
-  oauthclient_id = var.GENESYSCLOUD_OAUTHCLIENT_ID
-  oauthclient_secret = var.GENESYSCLOUD_OAUTHCLIENT_SECRET
-  aws_region = "ap-south-1"
+  oauthclient_id = "f78181ab-9bab-43dd-aa79-5874151c1305"
+  oauthclient_secret = "lyRry3hyVo_QRyHLPC26EwFZdJOH4e6WRBzldFCnmLo"
+  aws_region = "eu-west-2"
 }
