@@ -15,11 +15,6 @@ terraform {
   }
 }
 
-variable "GENESYSCLOUD_OAUTHCLIENT_ID" {
-}
-variable "GENESYSCLOUD_OAUTHCLIENT_SECRET" {
-}
-
 provider "genesyscloud" {
   oauthclient_id = "f78181ab-9bab-43dd-aa79-5874151c1305"
   oauthclient_secret = "lyRry3hyVo_QRyHLPC26EwFZdJOH4e6WRBzldFCnmLo"
