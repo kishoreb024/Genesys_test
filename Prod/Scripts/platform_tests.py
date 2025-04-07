@@ -4,8 +4,8 @@ import os
 import time
 import PureCloudPlatformClientV2
 
-CLIENT_ID = "f78181ab-9bab-43dd-aa79-5874151c1305"
-CLIENT_SECRET = "lyRry3hyVo_QRyHLPC26EwFZdJOH4e6WRBzldFCnmLo"
+CLIENT_ID = "b9f8ef5f-397c-4624-8e3d-a7aaef53f68e"
+CLIENT_SECRET = "0X-JV6aldrA11waZoe50-VfvKTyzbDLa5fouvxdrz1c"
 CLIENT_REGION = "eu-west-2"
 CLIENT_API_REGION = "https://api.euw2.pure.cloud"
 PureCloudPlatformClientV2.configuration.host = 	CLIENT_API_REGION

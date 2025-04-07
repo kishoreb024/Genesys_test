@@ -110,7 +110,7 @@ inboundCall:
         choices:
           - menuDisconnect:
               name: Disconnect
-              dtmf: digit_9
+              dtmf: digit_5
               globalDtmf: false
               globalSpeechRecTerms: false
   tasks:
