@@ -4,7 +4,7 @@ runs:
   using: "composite"
   steps:
     - run: |
-        cd $GITHUB_WORKSPACE/Prod/
+        cd $GITHUB_WORKSPACE/Production/
         terraform init 
         terraform apply --auto-approve
         cd $GITHUB_WORKSPACE
