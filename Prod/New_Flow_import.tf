@@ -1,4 +1,4 @@
-resource "genesyscloud_flow" "New_Flow" {
+resource "genesyscloud_flow" "New_Flow_2" {
   filepath          = "Kishore_Terraform_Demo_Template_v2-0.yaml"
   file_content_hash = filesha256("Kishore_Terraform_Demo_Template_v2-0.yaml")
 
