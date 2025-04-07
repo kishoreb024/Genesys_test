@@ -7,7 +7,7 @@ terraform {
       name = "Genesys_Dev_TF" 
     } 
   }  
-  required_version = "<= 1.7.5"
+  required_version = "~> 1.7"
   required_providers {
     genesyscloud = {
       source  = "mypurecloud/genesyscloud",
