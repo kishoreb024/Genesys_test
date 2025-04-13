@@ -5,7 +5,7 @@ resource "genesyscloud_tf_export" "export" {
     #"genesyscloud_architect_schedules"
 	#"genesyscloud_routing_queue"
 	#"genesyscloud_flow"
-	"genesyscloud_architect_schedules"
+	"genesyscloud_architect_schedulegroups"
   ]
   ignore_cyclic_deps           = true
   split_files_by_resource      = true
