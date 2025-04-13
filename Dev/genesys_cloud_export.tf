@@ -10,6 +10,5 @@ resource "genesyscloud_tf_export" "export" {
   ignore_cyclic_deps           = true
   split_files_by_resource      = true
   enable_dependency_resolution = true
-  export_as_hcl = true
   export_format = "hcl"
 }
