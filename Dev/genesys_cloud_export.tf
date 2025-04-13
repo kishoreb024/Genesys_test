@@ -11,5 +11,5 @@ resource "genesyscloud_tf_export" "export" {
   split_files_by_resource      = true
   enable_dependency_resolution = true
   export_as_hcl = true
-  export_format = hcl
+  export_format = "hcl"
 }
