@@ -1,5 +1,5 @@
 resource "genesyscloud_tf_export" "export" {
-  directory = "./genesyscloud"
+  directory = "./"
 
   resource_types = [
     #"genesyscloud_architect_schedules"
