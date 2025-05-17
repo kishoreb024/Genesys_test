@@ -1,5 +1,5 @@
 resource "genesyscloud_tf_export" "export" {
-  directory = "./"
+  directory = "$GITHUB_WORKSPACE/Dev/"
 
   resource_types = [
     "genesyscloud_architect_schedules"
