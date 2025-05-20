@@ -1,5 +1,5 @@
 terraform {
-  backend "local" { 
+  backend "remote" { 
     
     organization = "Genesys_Mumbai_Test" 
 
